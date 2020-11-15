@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Card from "./Card";
+import "./index.css";
 
 ReactDOM.render(
   <>
+    <h1 className="heading_style">List of some good series</h1>
     <Card
       imgsrc="https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
       title="A netflix original series"
