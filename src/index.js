@@ -1,28 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Card from "./Card";
 
 ReactDOM.render(
   <>
-    <div className="cards">
-      <div className="card">
-        <img
-          src="https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
-          alt="random photograph"
-          className="card_img"
-        />
-        <div className="card_info">
-          <span className="card_category"> A netflix original series</span>
-          <h3 className="card_title"> The Breaking Bad</h3>
-          <a
-            href="https://www.netflix.com/in/title/70143836?source=35"
-            target="_blank"
-          >
-            <button>Watch Now</button>
-          </a>
-        </div>
-      </div>
-    </div>
+    <Card
+      imgsrc="https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+      title="A netflix original series"
+      sname="The Breaking Bad"
+      link="https://www.netflix.com/in/title/70143836?source=35"
+    ></Card>
+    <Card
+      imgsrc="https://m.media-amazon.com/images/M/MV5BODc5YTBhMTItMjhkNi00ZTIxLWI0YjAtNTZmOTY0YjRlZGQ0XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_.jpg"
+      title="A nickalodiean original series"
+      sname="Avatar: The last air bender"
+      link="https://www.imdb.com/title/tt0417299/"
+    ></Card>
+    <Card
+      imgsrc="https://m.media-amazon.com/images/M/MV5BMTA4ODE4NjA5ODleQTJeQWpwZ15BbWU4MDUxMTQ0NTYx._V1_.jpg"
+      title="A netflix original series"
+      sname="Limitless"
+      link="https://www.imdb.com/title/tt4422836/"
+    ></Card>
   </>,
-
   document.getElementById("root")
 );
