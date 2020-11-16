@@ -2,27 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Card from "./Card";
 import "./index.css";
+import Sdata from "./Sdata";
 
 ReactDOM.render(
   <>
     <h1 className="heading_style">List of some good series</h1>
     <Card
-      imgsrc="https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
-      title="A netflix original series"
-      sname="The Breaking Bad"
-      link="https://www.netflix.com/in/title/70143836?source=35"
+      imgsrc={Sdata[0].imgsrc}
+      title={Sdata[0].title}
+      sname={Sdata[0].sname}
+      link={Sdata[0].link}
     ></Card>
     <Card
-      imgsrc="https://m.media-amazon.com/images/M/MV5BODc5YTBhMTItMjhkNi00ZTIxLWI0YjAtNTZmOTY0YjRlZGQ0XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_.jpg"
-      title="A nickalodiean original series"
-      sname="Avatar: The last air bender"
-      link="https://www.imdb.com/title/tt0417299/"
+      imgsrc={Sdata[1].imgsrc}
+      title={Sdata[1].title}
+      sname={Sdata[1].sname}
+      link={Sdata[1].link}
     ></Card>
     <Card
-      imgsrc="https://m.media-amazon.com/images/M/MV5BMTA4ODE4NjA5ODleQTJeQWpwZ15BbWU4MDUxMTQ0NTYx._V1_.jpg"
-      title="A netflix original series"
-      sname="Limitless"
-      link="https://www.imdb.com/title/tt4422836/"
+      imgsrc={Sdata[2].imgsrc}
+      title={Sdata[2].title}
+      sname={Sdata[2].sname}
+      link={Sdata[2].link}
     ></Card>
   </>,
   document.getElementById("root")
